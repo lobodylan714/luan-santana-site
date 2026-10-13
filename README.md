@@ -17,6 +17,10 @@ O workflow em `.github/workflows/pages.yml` publica a página quando há um push
 
 O workflow copia apenas os arquivos da página e as imagens para a publicação; o README, este estudo e os arquivos de configuração não são incluídos no site.
 
+### Se a primeira publicação falhar
+
+Confirme em **Settings → Pages → Build and deployment** que a fonte é **GitHub Actions**. Depois de salvar essa configuração, envie uma nova alteração para `main` ou execute novamente o workflow na aba **Actions**.
+
 ## Galeria
 
 As sete fotografias usadas pela galeria estão na pasta `imagens`. Para trocar ou adicionar uma foto, coloque o arquivo nessa pasta e atualize a lista `fotos` em `script.js`. Use caminhos relativos para manter a compatibilidade com GitHub Pages.
