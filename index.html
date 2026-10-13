@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Uma página de fã para celebrar a trajetória, as músicas e as memórias que Luan Santana compartilha com o público."
+    >
+    <meta name="theme-color" content="#100d16">
+    <title>Luan Santana — Música que vira memória</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+      <a class="logo" href="#inicio" aria-label="Luan Santana, voltar ao início">
+        <span class="logo-simbolo" aria-hidden="true">LS</span>
+        <span>LUAN SANTANA</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
+        <span class="menu-icone" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav class="menu" id="menu-principal" aria-label="Navegação principal">
+        <a href="#sobre">A história</a>
+        <a href="#musicas">Músicas</a>
+        <a href="#momentos">Curiosidades</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+
+      <a
+        class="botao botao-contorno topo-cta"
+        href="https://www.luansantana.com.br/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Site oficial <span aria-hidden="true">↗</span>
+      </a>
+      <button
+        class="tema-toggle"
+        id="tema"
+        type="button"
+        aria-label="Alternar tema"
+        aria-pressed="false"
+      >◐</button>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+        <div class="hero-fundo" aria-hidden="true"></div>
+        <div class="hero-conteudo" data-reveal>
+          <p class="sobretitulo"><span></span> UM UNIVERSO DE CANÇÕES</p>
+          <h1 id="titulo-principal">Toda canção<br>guarda <em>uma história.</em></h1>
+          <p class="hero-descricao">
+            Um espaço feito por fãs para celebrar a música, os momentos e a trajetória
+            de Luan Santana.
+          </p>
+          <div class="hero-acoes">
+            <a class="botao botao-destaque" href="#musicas">
+              Explore as músicas <span aria-hidden="true">↓</span>
+            </a>
+            <a class="link-simples" href="#sobre">Conheça a história</a>
+          </div>
+          <p class="hero-nota">Uma homenagem de fã. Esta não é uma página oficial.</p>
+        </div>
+
+        <figure class="galeria" data-reveal>
+          <button
+            class="foto-destaque"
+            id="trocar-foto"
+            type="button"
+            aria-label="Próxima foto de Luan Santana"
+          >
+            <img
+              id="foto-artista"
+              src="imagens/luan.jpg"
+              alt="Fotografia de Luan Santana"
+              width="720"
+              height="900"
+              fetchpriority="high"
+            >
+            <span class="foto-selo" aria-hidden="true">LUAN SANTANA · GALERIA DE FÃ</span>
+          </button>
+          <figcaption>
+            <span id="foto-contador" aria-live="polite">01 / 07</span>
+            <span>Toque na foto para ver a próxima</span>
+          </figcaption>
+          <div class="galeria-controles" aria-label="Controles da galeria">
+            <button id="foto-anterior" class="controle-foto" type="button" aria-label="Foto anterior">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button id="foto-proxima" class="controle-foto" type="button" aria-label="Próxima foto">
+              <span aria-hidden="true">→</span>
+            </button>
+            <button
+              id="alternancia-fotos"
+              class="controle-automatico"
+              type="button"
+              aria-pressed="true"
+            >Pausar troca automática</button>
+          </div>
+        </figure>
+
+        <a class="indicador-scroll" href="#sobre" aria-label="Rolar para conhecer a história">
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="secao sobre" id="sobre" aria-labelledby="titulo-sobre">
+        <div class="secao-cabecalho" data-reveal>
+          <p class="sobretitulo"><span></span> QUEM FAZ A TRILHA SONORA</p>
+          <h2 id="titulo-sobre">Uma voz. <em>Mil lembranças.</em></h2>
+        </div>
+        <div class="sobre-conteudo" data-reveal>
+          <p class="texto-destaque">
+            De Campo Grande para os palcos do Brasil, a música de Luan Santana
+            acompanha histórias de amor, saudade e encontros.
+          </p>
+          <div class="sobre-textos">
+            <p>
+              Luan Rafael Domingos Santana nasceu em 13 de março de 1991, em Campo
+              Grande, Mato Grosso do Sul. Cantor brasileiro, construiu uma trajetória
+              ligada principalmente ao sertanejo, com influências pop.
+            </p>
+            <p>
+              Esta página reúne algumas músicas, curiosidades e imagens em um só
+              lugar — um convite para lembrar canções que ganharam significado na
+              vida de tanta gente.
+            </p>
+          </div>
+        </div>
+        <dl class="fatos" data-reveal>
+          <div><dt>Nome</dt><dd>Luan Rafael Domingos Santana</dd></div>
+          <div><dt>Nascimento</dt><dd>13 de março de 1991</dd></div>
+          <div><dt>De onde vem</dt><dd>Campo Grande · MS</dd></div>
+          <div><dt>Sonoridade</dt><dd>Sertanejo + pop</dd></div>
+        </dl>
+      </section>
+
+      <section class="secao musicas-secao" id="musicas" aria-labelledby="titulo-musicas">
+        <div class="secao-cabecalho" data-reveal>
+          <p class="sobretitulo"><span></span> CANÇÕES PARA CANTAR JUNTO</p>
+          <h2 id="titulo-musicas">Aperte o play <em>na memória.</em></h2>
+          <p class="secao-intro">
+            Escolha as que fazem parte da sua trilha sonora. Monte sua lista e leve
+            seus favoritos com você enquanto estiver nesta página.
+          </p>
+        </div>
+
+        <div class="musicas">
+          <article class="cartao-musica" data-reveal>
+            <span class="numero-musica" aria-hidden="true">01</span>
+            <div><p class="musica-tipo">CANÇÃO</p><h3>Te Esperando</h3></div>
+            <button class="adicionar" type="button" aria-pressed="false">+ Minha lista</button>
+          </article>
+          <article class="cartao-musica" data-reveal>
+            <span class="numero-musica" aria-hidden="true">02</span>
+            <div><p class="musica-tipo">CANÇÃO</p><h3>Morena</h3></div>
+            <button class="adicionar" type="button" aria-pressed="false">+ Minha lista</button>
+          </article>
+          <article class="cartao-musica" data-reveal>
+            <span class="numero-musica" aria-hidden="true">03</span>
+            <div><p class="musica-tipo">CANÇÃO</p><h3>Quando a Bad Bater</h3></div>
+            <button class="adicionar" type="button" aria-pressed="false">+ Minha lista</button>
+          </article>
+          <article class="cartao-musica" data-reveal>
+            <span class="numero-musica" aria-hidden="true">04</span>
+            <div><p class="musica-tipo">CANÇÃO</p><h3>Tudo Que Você Quiser</h3></div>
+            <button class="adicionar" type="button" aria-pressed="false">+ Minha lista</button>
+          </article>
+        </div>
+
+        <p class="lista-status" id="lista" role="status" aria-live="polite">
+          Sua lista ainda está vazia. Escolha uma música para começar.
+        </p>
+      </section>
+
+      <section class="faixa-citacao" aria-label="Uma ideia para guardar">
+        <p data-reveal>Algumas canções acabam. Outras continuam com a gente.</p>
+        <span>PARA QUEM JÁ TRANSFORMOU UMA CANÇÃO EM LEMBRANÇA</span>
+      </section>
+
+      <section class="secao momentos" id="momentos" aria-labelledby="titulo-momentos">
+        <div class="secao-cabecalho" data-reveal>
+          <p class="sobretitulo"><span></span> UM POUCO MAIS SOBRE O ARTISTA</p>
+          <h2 id="titulo-momentos">Você sabia?</h2>
+          <p class="secao-intro">
+            Abra os tópicos para conhecer alguns detalhes sobre a trajetória e as
+            músicas de Luan Santana.
+          </p>
+        </div>
+        <div class="curiosidades">
+          <details data-reveal>
+            <summary><span>01</span> Qual é o nome completo dele?</summary>
+            <p>O nome completo do cantor é Luan Rafael Domingos Santana. Ele é conhecido artisticamente como Luan Santana.</p>
+          </details>
+          <details data-reveal>
+            <summary><span>02</span> Quando e onde ele nasceu?</summary>
+            <p>Luan nasceu em 13 de março de 1991, em Campo Grande, capital de Mato Grosso do Sul. A sigla do estado é MS.</p>
+          </details>
+          <details data-reveal>
+            <summary><span>03</span> Qual é o estilo musical dele?</summary>
+            <p>Seu trabalho é associado principalmente à música sertaneja, com influências pop. Essa combinação aparece em canções de sonoridades variadas.</p>
+          </details>
+          <details data-reveal>
+            <summary><span>04</span> Quais músicas estão nesta página?</summary>
+            <p>A seleção inclui “Te Esperando”, “Morena”, “Quando a Bad Bater” e “Tudo Que Você Quiser”. Você pode adicionar suas favoritas à lista acima.</p>
+          </details>
+          <details data-reveal>
+            <summary><span>05</span> Que temas aparecem nas canções?</summary>
+            <p>Muitas canções do repertório associado ao artista falam de amor, saudade, encontros e relacionamentos — temas que fazem parte de diferentes momentos da vida de quem escuta.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="quiz-secao" id="quiz" aria-labelledby="titulo-quiz">
+        <div class="quiz-chamada" data-reveal>
+          <p class="sobretitulo"><span></span> DESAFIO DE FÃ</p>
+          <h2 id="titulo-quiz">Você conhece<br><em>essa história?</em></h2>
+          <p>São 20 perguntas sobre Luan Santana. Responda no seu ritmo e descubra seu resultado no final.</p>
+          <p class="quiz-detalhe">20 PERGUNTAS <span aria-hidden="true">·</span> RESULTADO NO FINAL</p>
+        </div>
+
+        <div class="quiz-painel" data-reveal>
+          <div id="quiz-inicio">
+            <span class="quiz-icone" aria-hidden="true">?</span>
+            <h3>Pronto para jogar?</h3>
+            <p>Não vamos revelar as respostas enquanto você joga. Boa sorte!</p>
+            <button class="botao botao-destaque" id="iniciar-quiz" type="button">Começar o quiz <span aria-hidden="true">→</span></button>
+          </div>
+          <div id="quiz-pergunta" aria-live="polite" hidden>
+            <p class="quiz-progresso" id="progresso-quiz"></p>
+            <progress id="barra-quiz" max="20" value="0" aria-label="Progresso do quiz"></progress>
+            <h3 id="texto-pergunta" tabindex="-1"></h3>
+            <div class="opcoes-quiz" id="opcoes-quiz"></div>
+          </div>
+          <div id="resultado-quiz" role="status" aria-live="polite" hidden>
+            <span class="quiz-icone" aria-hidden="true">♪</span>
+            <h3>Esse foi o seu resultado</h3>
+            <p id="resumo-quiz"></p>
+            <button class="botao botao-destaque" id="refazer-quiz" type="button">Jogar novamente</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="convite" aria-labelledby="titulo-convite">
+        <p class="sobretitulo"><span></span> A PRÓXIMA MÚSICA É SUA</p>
+        <h2 id="titulo-convite">Qual canção faz parte <em>da sua história?</em></h2>
+        <a class="botao botao-destaque" href="#musicas">Escolha a sua favorita <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <a class="logo" href="#inicio"><span class="logo-simbolo" aria-hidden="true">LS</span><span>LUAN SANTANA</span></a>
+      <p>Projeto independente de fã. Não oficial e sem vínculo com o artista.</p>
+      <a class="rodape-voltar" href="#inicio">Voltar ao início ↑</a>
+    </footer>
+  </body>
+</html>
